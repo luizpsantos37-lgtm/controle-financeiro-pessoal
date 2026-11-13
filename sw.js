@@ -1,6 +1,6 @@
 // Funcionamento offline: guarda os arquivos do app no aparelho.
 // Os DADOS financeiros não passam por aqui (ficam no armazenamento local do app).
-const CACHE='controle-financeiro-pwa-v2.1.1';
+const CACHE='controle-financeiro-pwa-v2.2';
 const FILES=['./','./index.html','./app.css','./manifest.webmanifest','./icons/apple-touch-icon.png','./icons/icon-192.png','./icons/icon-512.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE).map(x=>caches.delete(x)))).then(()=>self.clients.claim()));});

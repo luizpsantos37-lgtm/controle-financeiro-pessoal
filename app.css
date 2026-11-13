@@ -110,3 +110,17 @@ html.m .it.sub .t b{color:var(--ink);font-weight:600}html.m .fields label:has(#g
 .instpay summary{cursor:pointer;font-size:12px;font-weight:700;color:#087c74;white-space:nowrap}.instpay .invpay{margin:6px 0}.instpay .month-line{font-size:12px}
 .recur{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}.recur .linkbtn{font-size:12px}
 html.m .instpay{margin-top:8px;border-top:1px solid var(--line);padding-top:6px}html.m .instpay summary{font-size:14px;padding:8px 0}html.m .recur{flex-wrap:wrap;min-height:44px}html.m .recur input{width:24px!important;height:24px}html.m .recur .linkbtn{font-size:14px;min-height:36px}
+/* v2.2 — Parcelas a receber */
+.t-receber{background:#e8f0ff;color:#2b4fa8}
+.rv-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px}.rv-cmp{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:6px}.rv-cmp span{font-size:12px;color:#60777c}.rv-cmp b{display:block;font-size:17px;color:#18252a;margin-top:2px}.rv-cmp b.bad-t{color:#a12735}.rv-cmp b.good-t{color:#0b6c40}
+.rv-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.rv-head>div{flex:1}.rv-person{font-weight:800;font-size:16px;border:0;background:transparent;padding:2px 0;width:100%;max-width:420px}.rv-desc{border:0;background:transparent;padding:2px 0;width:100%;max-width:420px;color:#18252a}
+.rv-kpis{max-width:420px}.rv-chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.rv-chips button.on{background:#087c74;color:#fff;border-color:#087c74}
+tr.rv-linked td{color:#2b4fa8}
+html.m .rv-cards{grid-template-columns:1fr}html.m .rv-cmp b{font-size:16px;color:var(--ink)}html.m .rv-person{font-size:18px!important;color:var(--ink)}html.m .rv-desc{color:var(--ink)}
+html.m .rv-parcel{border-top:1px solid var(--line);padding:9px 0}html.m .rv-ph{display:flex;justify-content:space-between;font-size:15px}html.m .rv-parcel.paid .rv-ph b:first-child{color:var(--good)}html.m .rv-parcel.late .rv-ph b:first-child{color:var(--bad)}
+html.m .rv-chips button{border-radius:999px;min-height:38px}html.m .rv-block{border-left-color:#2b4fa8}
+@media (prefers-color-scheme:dark){html.m .t-receber{background:#1b2c44;color:#9cc3ff}}
+#rvDialog [hidden]{display:none!important}
+.rv-head input,.rv-head small{display:block}.rv-head .tag{margin-top:4px}
+.rv-kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}.rv-kpis div{background:#f3f7f8;border-radius:8px;padding:7px 10px;display:flex;flex-direction:column}.rv-kpis span{font-size:12px;color:#60777c}.rv-kpis strong{font-size:16px}
+html.m .rv-kpis div{background:#f3f7f8}@media (prefers-color-scheme:dark){html.m .rv-kpis div{background:#1d2b32}}
