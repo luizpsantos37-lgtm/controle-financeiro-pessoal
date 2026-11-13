@@ -1,0 +1,16 @@
+{
+ "name": "Controle Financeiro",
+ "short_name": "Finanças",
+ "description": "Finanças pessoais: contas, entradas, fluxo diário e cartões — dados salvos no próprio aparelho.",
+ "lang": "pt-BR",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#f2f4f7",
+ "theme_color": "#101a20",
+ "icons": [
+  {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+  {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+  {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+ ]
+}
